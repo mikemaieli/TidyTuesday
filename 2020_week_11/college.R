@@ -34,13 +34,14 @@ ggplot(data = salary_potential,
   geom_vline(xintercept = median(salary_potential$make_world_better_percent, na.rm = TRUE), size = 1) +
   annotate("text", x = 25, y = 92000, label = "median", hjust = 0, fontface = 2, family = "Arial Narrow") +
   annotate("text", x = 52.5, y = 55000, label = "median", hjust = 0, fontface = 2, family = "Arial Narrow") +
-  annotate("text", x = 25, y = 170000, label = "MORE MONEY, LESS MEANING", hjust = 0, family = "Arial Narrow", color = "#808080") +
-  annotate("text", x = 99, y = 170000, label = "MORE MONEY, MORE MEANING", hjust = 1, family = "Arial Narrow", color = "#808080") +
-  annotate("text", x = 99, y = 55000, label = "LESS MONEY, MORE MEANING", hjust = 1, family = "Arial Narrow", color = "#808080") +
+  annotate("text", x = 25, y = 170000, label = "MORE MONEY, LESS IMPACT", hjust = 0, family = "Arial Narrow", color = "#808080") +
+  annotate("text", x = 99, y = 170000, label = "MORE MONEY, MORE IMPACT", hjust = 1, family = "Arial Narrow", color = "#808080") +
+  annotate("text", x = 99, y = 55000, label = "LESS MONEY, MORE IMPACT", hjust = 1, family = "Arial Narrow", color = "#808080") +
   annotate("text", x = 25, y = 55000, label = "LESS MONEY, LESS MEANING", hjust = 0, family = "Arial Narrow", color = "#808080") +
-  labs(title = "Graduates of military- and healthcare-focused institutions report a combination of high salaries and meaningful work",
+  labs(title = "Graduates of military- and healthcare-focused institutions report a combination of high salaries and impactful work",
        subtitle = "A payscale.com salary survey asked millions of people about their salary, if and where they earned a bachelor’s degree, and if they felt their work makes the world a better place.<br/><span style = 'color:#575ECF'>**Eight US schools**</span> made the 90th percentile of both mid-career salary and percent who say their work is making the world a better place, all of which are military or healthcare focused schools.",
        caption = "source: payscale.com college salary report (bachelor's)
        analysis and visualization for #tidytuesday by @mikemaieli") +
   theme_ipsum(axis_title_size = 11) +
   theme(plot.subtitle = element_markdown())
+  
